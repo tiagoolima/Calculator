@@ -60,15 +60,24 @@ function multiplicar() {
   const multNumber2 = document.getElementById("multNumber2") as HTMLInputElement;
 
   const resultMultiplicacao = Number(multNumber1.value) * Number(multNumber2.value);
-  alert(`O valor da subtração: ${multNumber1.value} x ${multNumber2.value} = ${resultMultiplicacao}`)
+  alert(`O valor da multiplicação: ${multNumber1.value} x ${multNumber2.value} = ${resultMultiplicacao}`)
 
 }
 
 const botaoMultiplicar = document.getElementById("calcMult") as HTMLButtonElement;
 botaoMultiplicar.onclick = multiplicar;
 
-const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
 
+function dividir() {
+const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
+const divNumber2 = document.getElementById("divNumber2") as HTMLInputElement;
+
+const resultDividir = Number(divNumber1.value) / Number(divNumber2.value);
+  alert(`O valor da divisão: ${divNumber1.value} : ${divNumber2.value} = ${resultDividir}`)
+}
+
+const botaoDividir = document.getElementById("calcDiv") as HTMLButtonElement;
+botaoDividir.onclick = dividir;
 
 
 
