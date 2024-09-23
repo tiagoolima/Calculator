@@ -32,18 +32,29 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 
 function somar() {
-  let addNumber1 = document.getElementById("addNumber1") as HTMLInputElement;
-  let addNumber2 = document.getElementById("addNumber2") as HTMLInputElement;
+  const addNumber1 = document.getElementById("addNumber1") as HTMLInputElement;
+  const addNumber2 = document.getElementById("addNumber2") as HTMLInputElement;
 
-  const resultSoma = Number(addNumber1.value) + Number(addNumber2.value)
-  alert(`O valor da adição: ${addNumber1.value} + ${addNumber2.value} = ${resultSoma}`)
+  const resultSoma = Number(addNumber1.value) + Number(addNumber2.value);
+  alert(`O valor da adição: ${addNumber1.value} + ${addNumber2.value} = ${resultSoma}`);
 }
 
 const botaoSomar = document.getElementById("calcAdd") as HTMLButtonElement;
 botaoSomar.onclick = somar;
 
-const subNumber1 = document.getElementById("subNumber1") as HTMLInputElement;
-const subNumber2 = document.getElementById("subNumber2") as HTMLInputElement;
+
+function subtrair() {
+  const subNumber1 = document.getElementById("subNumber1") as HTMLInputElement;
+  const subNumber2 = document.getElementById("subNumber2") as HTMLInputElement;
+
+  const resultSubtracao = Number(subNumber1.value) - Number(subNumber2.value);
+  alert(`O valor da subtração: ${subNumber1.value} - ${subNumber2.value} = ${resultSubtracao}`)
+}
+
+const botaoSubtrair = document.getElementById("calcSub") as HTMLButtonElement;
+botaoSubtrair.onclick = subtrair;
+
+
 const multNumber1 = document.getElementById("multNumber1") as HTMLInputElement;
 const multNumber2 = document.getElementById("multNumber2") as HTMLInputElement;
 const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
