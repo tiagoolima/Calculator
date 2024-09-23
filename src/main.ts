@@ -37,6 +37,8 @@ function somar() {
 
   const resultSoma = Number(addNumber1.value) + Number(addNumber2.value);
   alert(`O valor da adição: ${addNumber1.value} + ${addNumber2.value} = ${resultSoma}`);
+  addNumber1.value = "";
+  addNumber2.value = "";
 }
 
 const botaoSomar = document.getElementById("calcAdd") as HTMLButtonElement;
@@ -49,6 +51,8 @@ function subtrair() {
 
   const resultSubtracao = Number(subNumber1.value) - Number(subNumber2.value);
   alert(`O valor da subtração: ${subNumber1.value} - ${subNumber2.value} = ${resultSubtracao}`)
+  subNumber1.value = "";
+  subNumber2.value = "";
 }
 
 const botaoSubtrair = document.getElementById("calcSub") as HTMLButtonElement;
@@ -61,6 +65,8 @@ function multiplicar() {
 
   const resultMultiplicacao = Number(multNumber1.value) * Number(multNumber2.value);
   alert(`O valor da multiplicação: ${multNumber1.value} x ${multNumber2.value} = ${resultMultiplicacao}`)
+  multNumber1.value = "";
+  multNumber2.value = "";
 
 }
 
@@ -69,11 +75,13 @@ botaoMultiplicar.onclick = multiplicar;
 
 
 function dividir() {
-const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
-const divNumber2 = document.getElementById("divNumber2") as HTMLInputElement;
+  const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
+  const divNumber2 = document.getElementById("divNumber2") as HTMLInputElement;
 
-const resultDividir = Number(divNumber1.value) / Number(divNumber2.value);
+  const resultDividir = Number(divNumber1.value) / Number(divNumber2.value);
   alert(`O valor da divisão: ${divNumber1.value} : ${divNumber2.value} = ${resultDividir}`)
+  divNumber1.value = "";
+  divNumber2.value = "";
 }
 
 const botaoDividir = document.getElementById("calcDiv") as HTMLButtonElement;
