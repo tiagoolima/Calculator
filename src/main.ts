@@ -55,8 +55,18 @@ const botaoSubtrair = document.getElementById("calcSub") as HTMLButtonElement;
 botaoSubtrair.onclick = subtrair;
 
 
-const multNumber1 = document.getElementById("multNumber1") as HTMLInputElement;
-const multNumber2 = document.getElementById("multNumber2") as HTMLInputElement;
+function multiplicar() {
+  const multNumber1 = document.getElementById("multNumber1") as HTMLInputElement;
+  const multNumber2 = document.getElementById("multNumber2") as HTMLInputElement;
+
+  const resultMultiplicacao = Number(multNumber1.value) * Number(multNumber2.value);
+  alert(`O valor da subtração: ${multNumber1.value} x ${multNumber2.value} = ${resultMultiplicacao}`)
+
+}
+
+const botaoMultiplicar = document.getElementById("calcMult") as HTMLButtonElement;
+botaoMultiplicar.onclick = multiplicar;
+
 const divNumber1 = document.getElementById("divNumber1") as HTMLInputElement;
 
 
